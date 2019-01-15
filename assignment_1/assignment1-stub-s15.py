@@ -119,13 +119,17 @@ def process_corpus(corpus_name):
 
     # print most frequent words for the different POS(NN, VBD, JJ, RB)
     most_common_nn = tagged_cfd['NN'].most_common()[0][0]
-    print('The most frequent word in the POS NN is', most_common_nn, 'and its similar words are:', text.similar(most_common_nn))
+    print('The most frequent word in the POS NN is', most_common_nn, 'and its similar words are:')
+    print(text.similar(most_common_nn))
     most_common_vbd = tagged_cfd['VBD'].most_common()[0][0]
-    print('The most frequent word in the POS VBD is', most_common_vbd, 'and its similar words are:', text.similar(most_common_vbd))
+    print('The most frequent word in the POS VBD is', most_common_vbd, 'and its similar words are:')
+    print(text.similar(most_common_vbd))
     most_common_jj = tagged_cfd['JJ'].most_common()[0][0]
-    print('The most frequent word in the POS JJ is', most_common_jj, 'and its similar words are:', text.similar(most_common_jj))
+    print('The most frequent word in the POS JJ is', most_common_jj, 'and its similar words are:')
+    print(text.similar(most_common_jj))
     most_common_rb = tagged_cfd['RB'].most_common()[0][0]
-    print('The most frequent word in the POS RB is', most_common_rb, 'and its similar words are:', text.similar(most_common_rb))
+    print('The most frequent word in the POS RB is', most_common_rb, 'and its similar words are:')
+    print(text.similar(most_common_rb))
 
 
     """
@@ -133,7 +137,8 @@ def process_corpus(corpus_name):
     """
 
     #print the collocations of the text
-    print('Collocations:', text.collocations())
+    print('Collocations:')
+    print(text.collocations())
     pass
 
 ###############################################################################
